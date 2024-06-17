@@ -6,7 +6,12 @@ const Header = () => {
     <header className='App-header'>
       <nav>
         <ul>
-          <li>PRODUCTS</li>
+          <li>
+            <a href='/'>HOME</a>
+          </li>
+          <li>
+            <a href='/products'>PRODUCTS</a>
+          </li>
           <li>EVENTS</li>
           <li>GET IN TOUCH</li>
           <li>LOGIN</li>
