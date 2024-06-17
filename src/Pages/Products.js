@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "../css/Products.css";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -26,13 +27,13 @@ const Products = () => {
   }
 
   return (
-    <div>
+    <div className='products-container'>
       {products.length > 0 ? (
         products.map(product => (
-          <div key={product.id}>
+          <div key={product.id} className='product-card'>
             <h2>{product.attributes.Name}</h2>
             <p>Price: {product.attributes.Price}</p>
-            <div>
+            <div className='description'>
               <h3>Description:</h3>
               {product.attributes.Description.map((desc, index) => (
                 <p key={index}>
