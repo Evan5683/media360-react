@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Footer from "./Pages/Footer";
 import Header from "./Pages/Header";
+import Products from "./Pages/Products";
 
 function App() {
   return (
@@ -50,6 +51,9 @@ function App() {
               faucibus tincidunt.
             </p>
           </div>
+        </section>
+        <section className='Products'>
+          <Products />
         </section>
 
         <section className='logos'>
